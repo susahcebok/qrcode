@@ -29,116 +29,9 @@
     <meta property="twitter:title" content="Easy QR Code Generator — A Free QR Code, Preview, Edit, Generate">
     <meta property="twitter:description" content="A digital-readable code consisting of an array of different color squares, typically used for storing URLs or other info for reading by the camera.">
     <meta property="twitter:image" content="https://cmmishra9.github.io/qr-code-generator.github.io/qrcode_small.png">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-        
-        .container{
-            width: 100%;
-            height: auto;
-            margin: auto;
-            margin-top: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        .header{
-            background-color: #5059dced;
-            width: 100%;
-        }
-        .header>div>h1{
-            line-height: 60px;
-            color: white;
-            font-size: 35px;
-            text-align: center;
-            font-weight: 700;
-        }
-        .text-field{
-            padding: 10px;
-            font-size: 16px;
-            outline: none;
-            border: 1px solid #d8d8d8;
-            margin: 10px 20px;
-            width: calc(100% - 60px);
-            font-family: 'Montserrat', sans-serif;
-        }
-        .mode{
-            margin-left: -16px;
-            display: inline-block;
-        }
-        .mode li{
-            list-style: none;
-            display: inline-block;
-            font-size: 12px;
-            background-color: #F0F0F1;
-            padding: 4px;
-            cursor: pointer;
-            margin-left: -4px;
-            transition-duration: .1s;
-        }
-        .mode .active{
-            background-color: #5059dced;
-            color: white;
-            line-height: 22px;
-            border-radius: 4px;
-        }
-        .gen{
-            float: right;
-            padding: 10px 20px;
-            background-color: #5059dced;
-            color: white;
-            border: 0px;
-            border-radius: 4px;
-            font-family: 'Montserrat', sans-serif;
-            margin-top: 13px;
-            margin-right: 20px;
-            cursor: pointer;
-        }
-        label{
-            margin-left: 16px;
-            font-size: 12px;
-            user-select: none;
-            cursor: pointer;
-            display: inline-block;
-        }
-        label span{
-            position: relative;
-            top: -2px;
-        }
-        .upload{
-            position: relative;
-            top: -2px;
-            font-size: 12px;
-            color: #3641de;
-            cursor: pointer;
-            display: inline-block;
-        }
-        .upload:hover{
-            text-decoration: underline;
-        }
-        .file-selector{
-            display: none;
-        }
-        .qr-container{
-            width: 100%;
-            height: 280px;
-            -webkit-box-align: center;
-            -webkit-box-pack: center;
-            display: -webkit-box;
-        }
-        .download{
-            font-size: 13px;
-            margin-left: 20px;
-        }
-        .download li{
-            list-style: none;
-            display: inline-block;
-            cursor: pointer;
-            color: #3641de;
-            margin-left: 5px;
-        }
-        .download li:hover{
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -169,5 +62,13 @@
     </div>
 <script src="js/qr-code-styling.js"></script>
 <script src="js/script.js"></script>
+<script>
+        /*if (window.location.protocol === 'http:') {
+            window.location.protocol = 'https:';
+        }*/
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+        }
+</script>
 </body>
 </html>
