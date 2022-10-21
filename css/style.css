@@ -97,14 +97,14 @@
         }
         .download{
             font-size: 13px;
-            margin-left: 20px;
+          /*  margin-left: 20px; */
         }
         .download li{
             list-style: none;
             display: inline-block;
             cursor: pointer;
             color: #3641de;
-            margin-left: 5px;
+            margin-left: 5px; 
         }
         .download li:hover{
             text-decoration: underline;
