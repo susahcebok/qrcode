@@ -14,7 +14,7 @@
         font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         
     }
-    div {
+    main {
         width: 600px;
         margin: 5em auto;
         padding: 2em;
@@ -27,7 +27,7 @@
         text-decoration: none;
     }
     @media (max-width: 700px) {
-        div {
+        main {
             margin: 0 auto;
             width: auto;
         }
@@ -36,11 +36,40 @@
 </head>
 
 <body>
-<div>
+<main>
     <h1>Example Domain</h1>
-    <p>This domain is for use in illustrative examples in documents. You may use this
-    domain in literature without prior coordination or asking for permission.</p>
-    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
-</div>
+    <p>Buat kode QR Anda sendiri dan tingkatkan bisnis atau ide Anda.</p>
+    <p>Buat, kelola, dan lacak kode QR Anda dengan mudah secara analitis.</p>
+        <input type="text" placeholder="Enter link or add some text" class="text-field">
+        <ul class="mode">
+            <li>Basic</li>
+            <li class="active">Medium</li>
+            <li>Advance</li>
+        </ul>
+        <button class="gen">Generate</button>
+        <br>
+        <label>
+            <input type="checkbox" class="checkbox">
+            <span>Add Logo</span>
+        </label>
+        <div class="upload">Custom logo</div>
+        <input type="file" class="file-selector" accept=".png, .jpg, .jpeg, .svg">
+        <div class="qr-container">Qr Code</div>
+        <div class="download">
+            <span>Download: </span>
+            <li>PNG</li>
+            <li>JPG</li>
+        </div>
+</main>
+<script src="js/qr-code-styling.js"></script>
+<script src="js/script.js"></script>
+<script>
+        /*if (window.location.protocol === 'http:') {
+            window.location.protocol = 'https:';
+        }*/
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+        }
+</script>
 </body>
 </html>
