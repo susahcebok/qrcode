@@ -23,16 +23,16 @@
 */
 
         .text-field{
-            padding: 10px;
+         /*   padding: 10px; */
             font-size: 16px;
             outline: none;
             border: 1px solid #d8d8d8;
-            margin: 10px 20px;
+         /*   margin: 10px 20px; */
             width: calc(100% - 60px);
             font-family: 'Montserrat', sans-serif;
         }
         .mode{
-            margin-left: -16px;
+          /*  margin-left: -16px; */
             display: inline-block;
         }
         .mode li{
@@ -40,9 +40,9 @@
             display: inline-block;
             font-size: 12px;
             background-color: #F0F0F1;
-            padding: 4px;
+         /*   padding: 4px; */
             cursor: pointer;
-            margin-left: -4px;
+          /*  margin-left: -4px; */
             transition-duration: .1s;
         }
         .mode .active{
