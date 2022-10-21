@@ -1,4 +1,3 @@
-/*
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
         
         .container{
@@ -20,14 +19,14 @@
             text-align: center;
             font-weight: 700;
         }
-*/
+
 
         .text-field{
             padding: 10px; 
             font-size: 16px;
             outline: none;
             border: 1px solid #d8d8d8;
-         /*   margin: 10px 20px; */
+            margin: 10px 20px; 
             width: calc(100% - 60px);
             font-family: 'Montserrat', sans-serif;
         }
@@ -97,7 +96,7 @@
         }
         .download{
             font-size: 13px;
-          /*  margin-left: 20px; */
+            margin-left: 20px; 
         }
         .download li{
             list-style: none;
