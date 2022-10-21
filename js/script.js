@@ -118,7 +118,7 @@ function generateQr(v) {
         // change button
         if(v || v == 0){ resetModeButton(v) }
         // download
-        download[0].onclick = () => qr.download({ name: "qr-code", extension: "png" });
-        download[1].onclick = () => qr.download({ name: "qr-code", extension: "jpg" });
+        download[0].onclick = () => qr.download({ name: "qr-code-by-ferry-ayunda", extension: "png" });
+        download[1].onclick = () => qr.download({ name: "qr-code-by-ferry-ayunda", extension: "jpg" });
     }
 }
